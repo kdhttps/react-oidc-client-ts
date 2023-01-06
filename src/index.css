@@ -381,7 +381,15 @@ i {
   width: 100%;
 }
 
-#login-page {
+#dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#home-page {
   display: flex;
   flex-direction: column;
   align-items: center;

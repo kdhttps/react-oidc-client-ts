@@ -6,51 +6,30 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Root, { loader as rootLoader, action as rootAction }  from "./routes/root";
-import ErrorPage from "./error-page";
-import Contact, { loader as contactLoader } from "./routes/contact";
-import Login from "./routes/login";
-import EditContact, { action as editAction } from "./routes/edit";
-import { action as destroyAction } from "./routes/destroy";
-import Index from "./routes/index";
+import Home from "./routes/home";
+import Dashboard from "./routes/dashboard";
+import SignIn from "./routes/sign-in";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader,
-    action: rootAction,
-    children: [
-      { index: true, element: <Index /> },
-      {
-        path: "contacts/:contactId",
-        element: <Contact />,
-        loader: contactLoader,
-      },
-      {
-        path: "contacts/:contactId/edit",
-        element: <EditContact />,
-        loader: contactLoader,
-        action: editAction,
-      },
-      {
-        path: "contacts/:contactId/destroy",
-        action: destroyAction,
-      },
-    ],
+    element: <Home />,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/signin",
+    element: <SignIn />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <div>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
