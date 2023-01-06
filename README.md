@@ -15,7 +15,7 @@ This is react application demo example protected by [OIDC PKCE Flow](https://dev
 - Application type: `web`
 - Post logout redirect url: `https://react_app_url`
 
-> Note: react_app_url, you can set it in .env file and also update your Host file with the same.
+> Note: react_app_url, you can set it in .env file and also update your Host file with the same host name.
 
 ### Create .env file and below variables
 
