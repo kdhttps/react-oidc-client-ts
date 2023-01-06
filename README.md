@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is react application demo example protected by [OIDC PKCE Flow](https://dev.to/kdhttps/the-best-security-for-single-page-applications-spa-openid-connect-oauth-2-0-authorization-code-pkce-flow-544p) using [oidc-client-ts](https://github.com/authts/oidc-client-ts) lib.
 
 ## Setup Project
 
