@@ -20,7 +20,7 @@ This is react application demo example protected by [OIDC PKCE Flow](https://dev
 ### Create .env file and below variables
 
 ```
-REACT_APP_OP_SERVER=https://p2.gluu.org
+REACT_APP_OP_SERVER=https://your.op.oidc.server.com
 REACT_APP_OP_CLIENT_ID=your_oidc_client_id
 REACT_APP_URL=https://your.local.app
 HTTPS=true
