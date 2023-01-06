@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { makeUserAuthentication } from "../makeOIDCUserManager";
 
 export default function SignIn() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const auth = makeUserAuthentication()
 
   useEffect(() => {
