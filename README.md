@@ -2,6 +2,31 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup Project
+
+### Create OIDC Client with following Details
+
+- Grants: `authorization_code refresh_token`
+- Response types: `code`
+- Scopes: `openid profile offline_access`
+- Token auth method: `none`
+- Redirect url: `https://react_app_url/signin`
+- Subject type: `pairwise`
+- Application type: `web`
+- Post logout redirect url: `https://react_app_url`
+
+> Note: react_app_url, you can set it in .env file and also update your Host file with the same.
+
+### Create .env file and below variables
+
+```
+REACT_APP_OP_SERVER=https://p2.gluu.org
+REACT_APP_OP_CLIENT_ID=your_oidc_client_id
+REACT_APP_URL=https://your.local.app
+HTTPS=true
+PORT=443
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
