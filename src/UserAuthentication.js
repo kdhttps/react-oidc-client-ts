@@ -34,7 +34,7 @@ export class UserAuthentication {
     }
   }
 
-  async signoutRedirect(): Promise<void> {
+  async signoutRedirect() {
     return this.userManager.signoutRedirect()
   }
 }
